@@ -289,7 +289,24 @@ input, select, textarea {
 			}
 
 		}
+		.branco {
+			color: #fff;
+		}
+		.abcd {
+			border-bottom: none;
+		}
+		.fundo{
+			background-image:url(images/overlay.png), url(images/bg.jpg);
+		}
 
+		#contato, .contato{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: center;
+			align-items: space-around;
+			margin: 5%;
+		}
 /* Row */
 
 	.row {
@@ -1794,6 +1811,7 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+
 /* Form */
 
 	form {
@@ -2643,6 +2661,13 @@ input, select, textarea {
 			width: 6.25em;
 		}
 
+		#header .button {
+			width: 30%;
+			margin-left: 60%;
+			margin-bottom: 5%;
+			background-color: #fff;
+		}
+
 /* Footer */
 
 	#footer .icons {
@@ -2987,7 +3012,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
+			
 	}
 
 /* Large */
@@ -3012,6 +3037,8 @@ input, select, textarea {
 				#header > .inner {
 					margin-bottom: 0;
 				}
+
+				
 
 		/* Footer */
 
@@ -3180,6 +3207,8 @@ input, select, textarea {
 					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
 				}
+
+				
 
 		/* Poptrox */
 
