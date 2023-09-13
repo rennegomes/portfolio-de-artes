@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="manifest" href="manifest.json">
 	</head>
 	<body class="is-preload">
 
@@ -461,5 +462,50 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+
+				let newWorker;
+
+				if ('serviceWorker' in navigator) {
+				
+				navigator.serviceWorker.register('/service-worker.js').then(reg => { reg.addEventListener('updatefound', () => {
+				
+				// A wild service worker has appeared in reg.installing!
+				
+				newWorker = reg.installing; newWorker.addEventListener('statechange', () => {
+				
+				// Has network.state changed?
+				 switch (newworker.state) {
+				
+				case 'installed':
+				
+				if (navigator.serviceWorker.controller) {
+				
+				// new update available
+				
+				}
+				
+				// No update available
+				
+				break;
+				
+				}
+				
+				});
+				
+				});
+
+			});
+			let refreshing;
+			navigator.serviceWorker.addEventListener('controllerchange', function() {
+				if (refreshing) return;
+				window.location.reload();
+				refreshing = true;
+			});
+
+			}
+				</script>
+
 	</body>
+	
 </html>
