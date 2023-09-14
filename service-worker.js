@@ -26,14 +26,14 @@ self.addEventListener('install', event => {
 
         './assets/js/util.js',
 
-        './icons/128.png',
-        './icons/144.png',
-        './icons/152.png',
-        './icons/167.png',
-        './icons/180.png',
-        './icons/196.png',
-        './icons/256.png',
-        './icons/512.png'
+        './icons/icone128.png',
+        './icons/icone144.png',
+        './icons/icone152.png',
+        './icons/icone167.png',
+        './icons/icone180.png',
+        './icons/icone196.png',
+        './icons/icone256.png',
+        './icons/icone512.png'
         
       ]))
   );
