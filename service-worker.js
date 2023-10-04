@@ -20,6 +20,7 @@ self.addEventListener('install', event => {
         './assets/js/jquery.poptrox.min.js',
         './assets/js/main.js',
         './assets/js/util.js',
+        './assets/js/api.js',
 
         './images/icons/icone67.png',
         './images/icons/icone128.png',
